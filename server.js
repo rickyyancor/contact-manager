@@ -10,3 +10,8 @@ app.use(bodyParser.urlencoded({
 }));
 app.use('/', express.static(__dirname));
 var server = app.listen(PORT);
+
+app.get('/aurelia', function(req, res){
+  console.log('se ha solicitado la direccion aurelia parametro abc: '+req.query.abc.firstName);
+  res.send('Hola desde el server en nodejs ');
+})

@@ -43,6 +43,7 @@
         ],
         "dependencies": [
           "aurelia-binding",
+          "aurelia-http-client",
           "aurelia-bootstrapper",
           "aurelia-dependency-injection",
           "aurelia-event-aggregator",
@@ -73,6 +74,25 @@
             "path": "../node_modules/aurelia-templating-router/dist/amd",
             "main": "aurelia-templating-router"
           },
+          "jquery",
+          {
+        "name": "nprogress",
+        "path": "../node_modules/nprogress",
+        "main": "nprogress",
+        "resources": [
+          "nprogress.css"
+        ]
+      },
+      {
+        "name": "bootstrap",
+        "path": "../node_modules/bootstrap/dist",
+        "main": "js/bootstrap.min",
+        "deps": ["jquery"],
+        "exports": "$",
+        "resources": [
+          "css/bootstrap.css"
+        ]
+      },
           {
             "name": "aurelia-testing",
             "path": "../node_modules/aurelia-testing/dist/amd",
